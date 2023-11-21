@@ -24,6 +24,7 @@ modules:
       # XXX My custom packages
       - krb5-workstation
       - libvirt-daemon-kvm
+      - lm_sensors
       - openssh-askpass
       - qemu-kvm
       - swtpm
