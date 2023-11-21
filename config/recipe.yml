@@ -29,6 +29,7 @@ modules:
       - qemu-kvm
       - swtpm
       - virt-install
+      - virt-viewer
     remove: []
   - type: bling # configure what to pull in from ublue-os/bling
     install:
