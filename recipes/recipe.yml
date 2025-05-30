@@ -24,6 +24,7 @@ modules:
       - krb5-workstation # for kerberos support
       - libvirt-daemon-kvm # virt support
       - lm_sensors # for Freon GNOME extension
+      - make # for making
       - openssh-askpass # ???
       - qemu-kvm # virt support
       - swtpm # virt support
