@@ -10,14 +10,6 @@ image-version: 42 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-                       # put configuration files you want in /usr/etc/ inside the image
-                       # while putting files in /etc/ is done on booted system by system administrators.
-                       # read more about this in files module reference.
-
   - type: rpm-ostree
     install:
       - gnome-clocks # for Panel World Clock GNOME extension
@@ -33,10 +25,10 @@ modules:
       - virt-viewer # virt support
 
   - type: default-flatpaks
-      configurations:
-       - notify: false
-         scope: system
-         install:
+    configurations:
+      - notify: false
+        scope: system
+        install:
           - org.localsend.localsend_app
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
