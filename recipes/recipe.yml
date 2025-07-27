@@ -33,7 +33,11 @@ modules:
       - virt-viewer # virt support
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
+      configurations:
+       - notify: false
+         scope: system
+         install:
+          - org.localsend.localsend_app
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
