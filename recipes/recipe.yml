@@ -12,6 +12,7 @@ image-version: 42 # latest is also supported if you want new updates ASAP
 modules:
   - type: rpm-ostree
     install:
+      - erofs-utils # for sysext dev
       - gnome-clocks # for Panel World Clock GNOME extension
       - krb5-workstation # for kerberos support
       - libvirt-daemon-kvm # virt support
