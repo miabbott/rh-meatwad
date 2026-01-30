@@ -21,6 +21,7 @@ modules:
       - openssh-askpass # ???
       - qemu-kvm # virt support
       - swtpm # virt support
+      - v4l-utils # usb camera support
       - virt-install # virt support
       - virt-manager # virt support
       - virt-viewer # virt support
