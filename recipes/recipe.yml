@@ -11,6 +11,8 @@ image-version: 42 # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
   - type: rpm-ostree
+    repos: 
+      - netbird.repo
     install:
       - erofs-utils # for sysext dev
       - gnome-clocks # for Panel World Clock GNOME extension
@@ -18,6 +20,8 @@ modules:
       - libvirt-daemon-kvm # virt support
       - lm_sensors # for Freon GNOME extension
       - make # for making
+      - netbird # VPN client
+      - netbird-ui # VPN client
       - openssh-askpass # ???
       - qemu-kvm # virt support
       - swtpm # virt support
