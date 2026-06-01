@@ -1,0 +1,8 @@
+# Keep our versions of customized files when syncing with upstream template.
+# These files contain project-specific content that should never be overwritten
+# by the upstream blue-build/template examples.
+recipes/** merge=keep-ours
+.github/workflows/build.yml merge=keep-ours
+README.md merge=keep-ours
+LICENSE merge=keep-ours
+cosign.pub merge=keep-ours
